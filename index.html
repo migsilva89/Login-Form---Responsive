@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form (Responsive)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+        <!-- COLOCAR TODOS ITEMS NO CENTRO  -->
+    <main class="container mx-auto h-screen flex justify-center items-center">
+
+        <div>
+            <div class="form border-2 border-gray-300 p-8 rounded-md drop-shadow-lg" id="login">
+                <div class="form-title bg-gray-600 rounded-md ">
+                <h1 class="text-white text-center text-2xl font-bold p-4 ">Welcome</h1>
+                </div>
+                <div class="form__input-group mt-6">
+                    <input type="text" class="form__input border-2 border-gray-600 rounded-md" autofocus placeholder="  Username" id="usernameInput">
+                </div>
+                <div class="form__input-group mt-6">
+                    <input  type="password" class="form__input border-2 border-gray-600 rounded-md" autofocus placeholder="  Password" id="passwordInput">
+                    <div class="padding mt-6"></div>
+                    <div class="bg-gray-600 rounded-md border-2 text-center">
+                    <a href="#" class="text-white">
+                        <button class="form__button p-1" id="loginButton">Sign In</button>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
