@@ -7,33 +7,55 @@
     <title>Login Form (Responsive)</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     
-        <!-- COLOCAR TODOS ITEMS NO CENTRO  -->
+    <!-- CLASS TO PLACE ALL ITEMS IN THE CENTER ! -->
     <main class="container mx-auto h-screen flex justify-center items-center">
 
         <div>
             <div class="form rounded-md drop-shadow-lg" id="login">
-                <div class="form-title">
-                <h1 class="text-gray-600 text-center text-4xl font-bold p-2 ">Welcome bro!</h1>
-                </div>
-
-                <div class="form__input-group mt-6">
-                    <input type="text" class="form__input border-2 border-gray-300 rounded-md p-2" autofocus placeholder="  Username" id="usernameInput">
-                </div>
-                <div class="form__input-group mt-6">
-                    <input  type="password" class="form__input border-2 border-gray-300 rounded-md p-2" autofocus placeholder="  Password" id="passwordInput">
-                    <div class="padding mt-6"></div>
-                    <div class="bg-gray-600 rounded-md border-2 text-center hover:bg-gray-500">
+                <!-- TITLE -->
+                <div class="space-y-6"> 
+                    <div class="form__title">
+                        <h1 class="text-gray-600 text-center text-4xl font-bold">Welcome bro!</h1>
+                    </div>
+                    
+                    <!-- INSERT USERNAME -->
+                    <div class="form__input-group">
+                        <input type="text" class="form__input border-2 border-gray-300 rounded-md p-2" autofocus placeholder="  Username" id="usernameInput">
+                    </div>
+                    <!-- INSER PASSWORD -->
+                    <div class="form__input-group">
+                        <input  type="password" class="form__input border-2 border-gray-300 rounded-md p-2" autofocus placeholder="  Password" id="passwordInput">
+                    </div>
+                    <!-- BUTTON -->
+                    <div class="form__button bg-gray-600 rounded-md border-2 text-center hover:bg-gray-500">
                     <a href="#" class="text-white">
-                        <button class="form__button p-2" id="loginButton">Sign In</button>
+                        <button class="p-2" id="loginButton">Sign In</button>
                     </a>
                     </div>
                 </div>
-
             </div>
         </div>
 
     </main>
+
+    <!-- SCRIPT GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    
+    <script>
+
+        // VARIAVEL BOX WITH GSAP
+        let box = new gsap.timeline();
+
+        // AUTOMATIZATIONS
+        box.from(".container", { width: "0%", stagger: 0.4, duration:1.5 });
+        box.from(".form__title", { opacity: 0, y: -30});
+        box.from(".form__input-group input", { opacity: 0, stagger: 0.3});
+        box.from(".form__button", {opacity:0, y:20} )
+
+    </script>
+
 </body>
 </html>
