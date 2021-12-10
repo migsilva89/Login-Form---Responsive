@@ -1,6 +1,6 @@
 # Responsive Login Form with Tailwind and JS. 
 
-
+![Alt Text](https://gyazo.com/0a233b38b9be3f981991520b1c030d93.gif)
 ## Installation
 
 ```bash
