@@ -20,12 +20,11 @@
                     <div class="form__title">
                         <h1 class="text-gray-600 text-center text-4xl font-bold">Welcome bro!</h1>
                     </div>
-                    
                     <!-- INSERT USERNAME -->
                     <div class="form__input-group">
                         <input type="text" class="form__input border-2 border-gray-300 rounded-md p-2" autofocus placeholder="  Username" id="usernameInput">
                     </div>
-                    <!-- INSER PASSWORD -->
+                    <!-- INSERT PASSWORD -->
                     <div class="form__input-group">
                         <input  type="password" class="form__input border-2 border-gray-300 rounded-md p-2" autofocus placeholder="  Password" id="passwordInput">
                     </div>
@@ -46,10 +45,10 @@
     
     <script>
 
-        // VARIAVEL BOX WITH GSAP
+        // VARIABLE BOX WITH GSAP(ANIMATION LIBRARY)
         let box = new gsap.timeline();
 
-        // AUTOMATIZATIONS
+        // AUTOMATIZATION
         box.from(".container", { width: "0%", stagger: 0.4, duration:1.5 });
         box.from(".form__title", { opacity: 0, y: -30});
         box.from(".form__input-group input", { opacity: 0, stagger: 0.3});
